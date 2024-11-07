@@ -1,0 +1,153 @@
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+h2 {
+    font-size: 1.8rem;
+    color: #008080;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #008080;
+    padding-bottom: 5px;
+}
+
+/* About Section */
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Activities Section */
+.activities ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.activities li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Other Info Section */
+.other-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+#brugteHjemmesider {
+    list-style-type: none;
+    padding: 0;
+}
+
+#brugteHjemmesider li {
+    margin: 10px 0;
+}
+
+#brugteHjemmesider a {
+    text-decoration: none;
+    color: #008080;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#brugteHjemmesider a:hover {
+    color: #005555;
+    text-decoration: underline;
+}
+
+/* General Styling for Links */
+a {
+    color: #008080;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005555;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+@media (max-width: 760px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.about, .activities, .other-info {
+    flex: 2;
+    padding: 15px;
+    background-color: #ddd;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 250px;
+}
+
+/* Table styles */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    font-size: 1rem;
+}
+
+@media (max-width: 760px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+.musik {
+    text-align: center;
+    margin-top: 10px;
+    padding: 50px;
+}

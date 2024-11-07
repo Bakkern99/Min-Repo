@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="timelineStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Interactive Timeline</title>
+</head>
+<body>
+    <h1>Interactive Historical Timeline</h1>
+    <input type="file" id="fileInput" accept=".csv">
+
+<!--Filtering by Year-->
+<div>
+    <label for="yearFilter">Fitler by Year:</label>
+    <select id="yearFilter">
+        <option value="all">All Years</option>
+        <option value="500BC-0">500 BC to 0</option>
+        <option value="0-1000AD">0 to 1000 AD</option>
+        <option value="1000AD-1500AD">1000 AD to 1500 AD</option>
+        <option value="1500AD-1800AD">1500 AD to 1800 AD</option>
+        <option value="1800AD-present">1800 AD to the present</option>
+    </select>
+</div>
+
+<!--Searching Events-->
+<div>
+    <label for="searchInput">Search Events:</label>
+    <input type="text" id="searchInput" placeholder="Enter keyword to search">
+</div>
+
+    <div id="timelineContainer"></div>
+
+    <!--JavaScript Libraries and script files-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="ActivityTimeline.js"></script>
+</body>
+</html>
